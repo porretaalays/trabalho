@@ -1,0 +1,56 @@
+body{
+    display:grid;
+    grid-template-areas: 'nav nav nav nav nav'
+                          'header header header header header'
+                          'section section section section section'
+                          'aside aside aside aside aside'
+                          'main main main main main'
+                          'footer footer footer footer footer';
+    grid-template-rows: 1vh 40vh 20vh 25vh 15vh;
+    font-family: 'Pacifico', cursive;
+    margin: 0%;
+    
+}
+nav{
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    grid-area: nav;
+}
+header{
+    display: flex;
+    grid-area: header;
+    background-image: url(imagens/WhatsApp\ Image\ 2019-07-05\ at\ 12.08.15\ \(9\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+header p{
+    color:white;
+    font-size: 22pt; 
+    margin: 0%;
+    text-align: center;
+}
+header  h1{
+    color:white;
+    font-size: 18pt;
+    margin: 0%;
+    text-align: end;
+}
+section{
+    grid-area:  section;
+    background-color: red;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+main{
+    grid-area: main;
+    background-color: aqua;
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
